@@ -1,16 +1,23 @@
-Guessing Game
-A simple number guessing game from the Rust Book.
+# Guessing Game
 
-How to Run
-cargo run
-Changes from the Rust Book
-I updated the random number generation:
+A simple number guessing game built using Rust, inspired by the official Rust Book tutorial.
 
-Old version:
-let secret_number = rand::thread_rng().gen_range(1..=100);
-New version:
-let secret_number: u32 = rand::rng().random_range(1..=100);
-Requirements
-Rust
-rand crate
-Use cargo build to build the project.
+## 📌 Description
+
+This project generates a random number between 1 and 100.  
+The user is prompted to enter a guess, and the program responds with:
+
+- **Too small!**
+- **Too big!**
+- **You win!**
+
+The game continues until the correct number is guessed.
+
+---
+
+## 🚀 How to Run
+
+To build the project:
+
+```bash
+cargo build
